@@ -154,10 +154,10 @@ def fund_edit(request, pk):
 
 @login_required
 def fund_delete(request, pk):
-   fund = get_object_or_404(Stock, pk=pk)
-   fund.delete()
-   funds = Fund.objects.filter(purchase_date__lte=timezone.now())
-   return render(request, 'portfolio/fund_list.html', {'funds': funds})
+        fund = get_object_or_404(Fund, pk=pk)
+        fund.delete()
+        funds = Fund.objects.filter(purchase_date__lte=timezone.now())
+        return render(request, 'portfolio/fund_list.html', {'funds': funds})
 
 
 #investment views

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22bf195f-9558-4fad-bce8-8fa6a8595990" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/portfolio/templates/portfolio/fund_list.html" afterPath="$PROJECT_DIR$/portfolio/templates/portfolio/fund_list.html" />
+      <change beforePath="$PROJECT_DIR$/portfolio/views.py" afterPath="$PROJECT_DIR$/portfolio/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +13,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/portfolio/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="242" column="25" lean-forward="false" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="25" />
+            <state relative-caret-position="68">
+              <caret line="156" column="45" lean-forward="true" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -123,7 +123,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fund_list.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fund_list.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio/templates/portfolio/fund_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
@@ -170,10 +170,10 @@
         <option value="$PROJECT_DIR$/efsblog/wsgi.py" />
         <option value="$PROJECT_DIR$/portfolio/models.py" />
         <option value="$PROJECT_DIR$/portfolio/forms.py" />
-        <option value="$PROJECT_DIR$/portfolio/views.py" />
         <option value="$PROJECT_DIR$/portfolio/templates/portfolio/portfolio.html" />
         <option value="$PROJECT_DIR$/portfolio/templates/portfolio/stock_list.html" />
         <option value="$PROJECT_DIR$/portfolio/templates/portfolio/fund_list.html" />
+        <option value="$PROJECT_DIR$/portfolio/views.py" />
       </list>
     </option>
   </component>
@@ -701,16 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/portfolio/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="242" column="25" lean-forward="false" selection-start-line="242" selection-start-column="4" selection-end-line="242" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/templates/portfolio/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1533">
@@ -764,6 +754,16 @@
             <element signature="e#1219#1225#0#HTML" expanded="true" />
             <element signature="e#1225#1231#0#HTML" expanded="true" />
             <element signature="e#1231#1237#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="156" column="45" lean-forward="true" selection-start-line="156" selection-start-column="45" selection-end-line="156" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
