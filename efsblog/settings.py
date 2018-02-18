@@ -33,7 +33,16 @@ if DEBUG:
     EMAIL_USE_TLS = True
     DEFAULT_FROM_EMAIL = 'vbhat0811@gmail.com'
 
-ALLOWED_HOSTS = ['127.0.0.1']
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+ALLOWED_HOSTS = ['*']
+
+DEBUG = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
 
 
 # Application definition
@@ -86,10 +95,15 @@ WSGI_APPLICATION = 'efsblog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ddj9lhrq8al74',
+        'USER': 'bnxmqombkbenaf',
+        'PASSWORD': '696928553a6aafb0608b6d154d665887ef0e71cdf69f9527db4ce5ef0d2e7746',
+        'HOST': 'ec2-54-163-234-99.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
