@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22bf195f-9558-4fad-bce8-8fa6a8595990" name="Default" comment="" />
+    <list default="true" id="22bf195f-9558-4fad-bce8-8fa6a8595990" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/portfolio/static/.keep" />
+      <change beforePath="$PROJECT_DIR$/static/.keep" afterPath="" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +68,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".keep" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/portfolio/static/.keep">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -185,6 +198,17 @@
               <item name="efsblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="efsblog" type="462c0819:PsiDirectoryNode" />
               <item name="efsblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="efsblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="efsblog" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="efsblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="efsblog" type="462c0819:PsiDirectoryNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -603,6 +627,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/portfolio/static/.keep">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
