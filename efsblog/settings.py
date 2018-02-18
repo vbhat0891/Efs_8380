@@ -29,7 +29,7 @@ DEBUG = True
 if DEBUG:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = 'vbhat0811@gmail.com  '
-    EMAIL_HOST_PASSWORD = 'msapp@123'
+    EMAIL_HOST_PASSWORD = 'xvailhfpdqekbmyn'
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
     DEFAULT_FROM_EMAIL = 'vbhat0811@gmail.com'
