@@ -17,7 +17,6 @@ class Customer(models.Model):
         default=timezone.now)
     updated_date = models.DateTimeField(auto_now_add=True)
 
-
     def created(self):
         self.created_date = timezone.now()
         self.save()
@@ -92,19 +91,7 @@ class Stock(models.Model):
         mkt_dt = (json_data["Meta Data"]["3. Last Refreshed"])
         open_price = float(json_data["Time Series (1min)"][mkt_dt]["1. open"])
         share_value = open_price
-        # plt.plot(share_value)
         return float(share_value) * float(self.shares)
-
-    # def current_stock_value_inr(self):
-    #     main_api = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE'
-    #     from_currency = '&from_currency=USD'
-    #     to_currency = '&to_currency=INR'
-    #     api_key = '&apikey=9NB1WTTUZ50HBKRN'
-    #     url = main_api + from_currency + to_currency + api_key
-    #     json_data = requests.get(url).json()
-    #     exc_rate = float(json_data["Realtime Currency Exchange Rate"]["5. Exchange Rate"])
-    #     inr_rate = exc_rate
-    #     return float(inr_rate)
 
     def current_stock_value_inr(self):
         main_api = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE'
@@ -118,7 +105,6 @@ class Stock(models.Model):
         return float(inr_rate)
 
     def current_stock_value_btc(self):
-        #symbol_f = str(self.symbol)
         main_api = 'https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE'
         from_currency = '&from_currency=USD'
         to_currency = '&to_currency=BTC'
