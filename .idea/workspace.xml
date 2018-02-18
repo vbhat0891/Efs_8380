@@ -127,17 +127,22 @@
         <entry file="file://$PROJECT_DIR$/portfolio/templates/portfolio/fund_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="21">
-              <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+              <caret line="37" column="78" lean-forward="false" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
               <folding>
                 <element signature="e#871#897#0#HTML" expanded="true" />
                 <element signature="e#1155#1161#0#HTML" expanded="true" />
                 <element signature="e#1161#1167#0#HTML" expanded="true" />
                 <element signature="e#1167#1173#0#HTML" expanded="true" />
                 <element signature="e#1173#1179#0#HTML" expanded="true" />
-                <element signature="e#1183#1189#0#HTML" expanded="true" />
-                <element signature="e#1189#1195#0#HTML" expanded="true" />
-                <element signature="e#1195#1201#0#HTML" expanded="true" />
+                <element signature="e#1179#1185#0#HTML" expanded="true" />
+                <element signature="e#1185#1191#0#HTML" expanded="true" />
+                <element signature="e#1191#1197#0#HTML" expanded="true" />
                 <element signature="e#1201#1207#0#HTML" expanded="true" />
+                <element signature="e#1207#1213#0#HTML" expanded="true" />
+                <element signature="e#1213#1219#0#HTML" expanded="true" />
+                <element signature="e#1219#1225#0#HTML" expanded="true" />
+                <element signature="e#1225#1231#0#HTML" expanded="true" />
+                <element signature="e#1231#1237#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -743,17 +748,22 @@
     <entry file="file://$PROJECT_DIR$/portfolio/templates/portfolio/fund_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
-          <caret line="37" column="44" lean-forward="false" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
+          <caret line="37" column="78" lean-forward="false" selection-start-line="37" selection-start-column="78" selection-end-line="37" selection-end-column="78" />
           <folding>
             <element signature="e#871#897#0#HTML" expanded="true" />
             <element signature="e#1155#1161#0#HTML" expanded="true" />
             <element signature="e#1161#1167#0#HTML" expanded="true" />
             <element signature="e#1167#1173#0#HTML" expanded="true" />
             <element signature="e#1173#1179#0#HTML" expanded="true" />
-            <element signature="e#1183#1189#0#HTML" expanded="true" />
-            <element signature="e#1189#1195#0#HTML" expanded="true" />
-            <element signature="e#1195#1201#0#HTML" expanded="true" />
+            <element signature="e#1179#1185#0#HTML" expanded="true" />
+            <element signature="e#1185#1191#0#HTML" expanded="true" />
+            <element signature="e#1191#1197#0#HTML" expanded="true" />
             <element signature="e#1201#1207#0#HTML" expanded="true" />
+            <element signature="e#1207#1213#0#HTML" expanded="true" />
+            <element signature="e#1213#1219#0#HTML" expanded="true" />
+            <element signature="e#1219#1225#0#HTML" expanded="true" />
+            <element signature="e#1225#1231#0#HTML" expanded="true" />
+            <element signature="e#1231#1237#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
