@@ -39,6 +39,8 @@
                 <th>Quantity</th>
                 <th>Purchase Price</th>
                 <th>Purchase Date</th>
+                <th>Recent Value</th>
+                <th>Recent Date</th>
                 <th colspan="3">Actions</th>
             </tr>
             </thead>
@@ -51,6 +53,8 @@
                     <td>{{ fund.quantity }}</td>
                     <td>{{ fund.purchase_price }}</td>
                     <td>{{ fund.purchase_date }}</td>
+                    <td>{{ fund.recent_value }}</td>
+                    <td>{{ fund.recent_date }}</td>
                     <td><a href="{% url 'portfolio:fund_edit' pk=fund.pk %}"
                            class="btn btn-warning">Edit</a></td>
                     <td><a href="{% url 'portfolio:fund_delete' pk=fund.pk %}"

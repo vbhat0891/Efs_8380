@@ -43,6 +43,8 @@
         <tr class="bg-info">
 
             <th>Portfolio Total Initial Investments</th>
+            <th>Portfolio Total Recent Investments</th>
+            <th>Grand Total Results</th>
 
 
         </tr>
@@ -50,6 +52,8 @@
         <tbody>
             <tr>
                 <td>{{ sum_of_initial_stock_value|add:sum_acquired_value.acquired_value__sum|add:sum_fund_initial_value }}</td>
+                <td>{{ sum_current_stocks_value|add:sum_recent_value.recent_value__sum }}</td>
+                <td>{{ sum_of_initial_stock_value|add:sum_acquired_value.acquired_value__sum|add:sum_fund_initial_value|sub:sum_current_stocks_value|add:sum_recent_value.recent_value__sum }}</td>
             </tr>
         </tbody>
     </table>
@@ -73,7 +77,6 @@
             <th>Current stock value in USD</th>
             <th>Current stock value in INR</th>
             <th>Current stock value in BTC</th>
-            <!--<th>Current stock value in INR</th>-->
 
         </tr>
         </thead>
@@ -104,12 +107,14 @@
 
             <th>Total Initial Stocks value</th>
             <th>Total Current Stocks value</th>
+            <th>Results for stocks</th>
         </tr>
         </thead>
         <tbody>
             <tr>
                 <td>{{ sum_of_initial_stock_value }}</td>
                 <td>{{ sum_current_stocks_value }}</td>
+                <td>{{ sum_current_stocks_value|sub:sum_of_initial_stock_value }}</td>
             </tr>
         </tbody>
     </table>
@@ -159,6 +164,7 @@
 
             <th>Total initial Investment</th>
             <th>Total current Investment</th>
+            <th>Results for Investments</th>
 
         </tr>
         </thead>
@@ -166,6 +172,7 @@
             <tr>
                 <td>{{ sum_acquired_value.acquired_value__sum }}</td>
                 <td>{{ sum_recent_value.recent_value__sum }}</td>
+                <td>{{ sum_recent_value.recent_value__sum|sub:sum_acquired_value.acquired_value__sum }}</td>
             </tr>
         </tbody>
     </table>
@@ -186,7 +193,8 @@
             <th>Initial Fund Price</th>
             <th>Initial Fund value</th>
             <th>Purchase Date</th>
-            <th>Current Mutual Fund value</th>
+            <th>Recent Mutual Fund value</th>
+            <th>Recent Mutual Fund Date</th>
 
         </tr>
         </thead>
@@ -200,9 +208,8 @@
                 <td>{{ fund.purchase_price }}</td>
                 <td>{{ fund.initial_fund_value }}</td >
                 <td>{{ fund.purchase_date}}</td>
-                <td>{{ fund.quantity|mul:fund.purchase_price }}</td>
-                <!--<td>{{ fund.current_stock_price }}</td>-->
-                <!--<td>{{ fund.current_stock_value }}</td>-->
+                <td>{{ fund.recent_value }}</td>
+                <td>{{ fund.recent_date }}</td>
             </tr>
         {% endfor %}
         </tbody>
@@ -218,14 +225,16 @@
         <tr class="bg-info">
 
             <th>Total inital mutual fund Investment</th>
-{#            <th>Total current mutual fund Investment</th>#}
+            <th>Total current mutual fund Investment</th>
+            <th>Results for mutual fund</th>
 
         </tr>
         </thead>
         <tbody>
             <tr>
                 <td>{{ sum_fund_initial_value }}</td>
-{#                <td>{{ sum_recent_value.recent_value__sum }}</td>#}
+                <td>{{ sum_fund_recent_value.recent_value__sum }}</td>
+                <td>{{ sum_fund_recent_value.recent_value__sum|sub:sum_fund_initial_value }}</td>
             </tr>
         </tbody>
     </table>

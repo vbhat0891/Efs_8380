@@ -240,7 +240,7 @@ def portfolio(request, pk):
     funds = Fund.objects.filter(customer=pk)
     sum_acquired_value = Investment.objects.filter(customer=pk).aggregate(Sum('acquired_value'))
     sum_recent_value = Investment.objects.filter(customer=pk).aggregate(Sum('recent_value'))
-    #sum_fund_initial_value = Fund.objects.filter(customer=pk).aggregate(Sum('initial_fund_value'))
+    sum_fund_recent_value = Fund.objects.filter(customer=pk).aggregate(Sum('recent_value'))
 
     # Initialize the value of the stocks
     sum_current_stocks_value = 0
@@ -261,4 +261,5 @@ def portfolio(request, pk):
                                                         'sum_recent_value': sum_recent_value,
                                                         'sum_current_stocks_value': sum_current_stocks_value,
                                                         'sum_of_initial_stock_value': sum_of_initial_stock_value,
-                                                        'sum_fund_initial_value': sum_fund_initial_value})
+                                                        'sum_fund_initial_value': sum_fund_initial_value,
+                                                        'sum_fund_recent_value': sum_fund_recent_value})
