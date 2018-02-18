@@ -21,15 +21,15 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'xj3+xn#^ha!ht=qc5p4tzgksu88^g7#5j%jgx9jro66c)hts_!'
-SECRET_KEY = os.environ['SECRET_KEY']
+SECRET_KEY = 'xj3+xn#^ha!ht=qc5p4tzgksu88^g7#5j%jgx9jro66c)hts_!'
+#SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 if DEBUG:
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_HOST_USER = 'vbhat0811@gmail.com  '
-    EMAIL_HOST_PASSWORD = 'zsdnamwvdteodwnq'
+    EMAIL_HOST_PASSWORD = 'msapp@123'
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
     DEFAULT_FROM_EMAIL = 'vbhat0811@gmail.com'
@@ -38,7 +38,7 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ALLOWED_HOSTS = ['*']
 
-DEBUG = True
+
 
 try:
     from .local_settings import *
