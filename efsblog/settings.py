@@ -32,7 +32,7 @@ if DEBUG:
     EMAIL_HOST_PASSWORD = 'xvailhfpdqekbmyn'
     EMAIL_PORT = 587
     EMAIL_USE_TLS = True
-    DEFAULT_FROM_EMAIL = 'vbhat0811@gmail.com'
+    DEFAULT_FROM_EMAIL = 'Eaglefins@gmail.com'
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
